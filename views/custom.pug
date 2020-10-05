@@ -1,0 +1,68 @@
+.row
+    .form.col.s12
+        .row
+            section
+                h3 Camera Settings
+                .input-field.col.s12.m12
+                    select#cameras
+                        option(value='default', selected='') New camera
+                .input-field.col.s12.m6
+                    input#cname.validate(placeholder='CameraName', type='text', name="cname")
+                    label(for='cname') CameraName
+                .input-field.col.s12.m6
+                    input#uname.validate(placeholder='Login name (optional)', type='text', name="uname")
+                    label(for='uname') Username
+                .input-field.col.s12.m6
+                    input#password.validate(placeholder='password (optional)', type='text', name="password")
+                    label(for='password') Password
+                .input-field.col.s12.m6
+                    input#ip.validate(placeholder='IP', type='text', name="ip")
+                    label(for='ip') IP
+                .input-field.col.s12.m6
+                    input#cid.validate(placeholder='CameraID', type='text', name="cid")
+                    label(for='cid') ID
+                .input-field.col.s12
+                    a.waves-effect.waves-light.btn#save_camera Save Camera
+                    a.waves-effect.waves-light.btn.disabled#delete_camera Delete Camera
+            section
+                h3.input-field.col.s12 vMix settings
+                    .input-field.col.s12.m12
+                        input#apiIP.validate(placeholder='API-IP', type='text', name="apiIP")
+                        label(for='apiIP') API-IP
+                    .input-field.col.s12.m2
+                        input#apiCallFreeze.validate(placeholder='API-CALL', type='text', name="apiCallFreeze")
+                        label(for='apiCallFreeze') API-CALL-FREEZE
+                    .input-field.col.s12.m2
+                        input#apiCallLiveT1.validate(placeholder='API-CALL', type='text', name="apiCallLiveTeam1")
+                        label(for='apiCallLiveT1') API-CALL-LIVE Team 1
+                    .input-field.col.s12.m2
+                        input#apiCallLiveT2.validate(placeholder='API-CALL', type='text', name="apiCallLiveTeam2")
+                        label(for='apiCallLiveT2') API-CALL-LIVE Team 2
+                    .input-field.col.s12.m2
+                        input#apiCallOver.validate(placeholder='API-CALL', type='text', name="apiCallOver")
+                        label(for='apiCallOver') API-CALL-Over
+                    .input-field.col.s12.m2
+                        input#apiCallTimeout.validate(placeholder='API-CALL', type='text', name="apiCallTimeout")
+                        label(for='apiCallTimeout') API-CALL-TIMEOUT
+                    .input-field.col.s12.m2
+                        input#apiCallAce.validate(placeholder='API-CALL', type='text', name="apiCallAce")
+                        label(for='apiCallAce') API-CALL-ACE
+                    .input-field.col.s12
+                        a.waves-effect.waves-light.btn#save_vmix Save vMix settings
+            section
+                h3.input-field.col.s12 Freezetimes settings
+                    .input-field.col.s12.m12
+                        input#rndsepk.validate(placeholder='Rounds seperated by komma (3,4,5)', type='text', name="rndsepk")
+                        label(for='rndsepk') Rounds seperated by komma
+                    .input-field.col.s12
+                        a.waves-effect.waves-light.btn#save_freeze Save Freezetime settings
+            section
+                h3.input-field.col.s12 OSC settings
+                    .input-field.col.s12.m12
+                        input#oscPort.validate(placeholder='OSC-Port', type='text', name="oscPort")
+                        label(for='oscPort') OSC-Port
+                    .input-field.col.s12.m12
+                        input#oscHost.validate(placeholder='OSC-IP', type='text', name="oscHost")
+                        label(for='oscHost') OSC-Host
+                    .input-field.col.s12
+                        a.waves-effect.waves-light.btn#save_osc Save OSC settings

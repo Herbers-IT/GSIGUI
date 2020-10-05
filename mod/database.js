@@ -1,0 +1,10 @@
+const Datastore = require('nedb');
+let database = {};
+database.players = new Datastore({ filename: './databases/players'});
+database.teams = new Datastore({ filename: './databases/teams'});
+database.huds = new Datastore({ filename: './databases/huds'});
+database.cameras = new Datastore({ filename: './databases/cameras'});
+database.vmix = new Datastore({ filename: './databases/vmix'});
+database.freezetime = new Datastore({ filename: './databases/freezetime'});
+database.osc = new Datastore({ filename: './databases/osc'});
+module.exports = database;

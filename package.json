@@ -1,0 +1,36 @@
+{
+  "name": "HUD",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HUD",
+  "author": "osztenkurden",
+  "maintainers": [
+    "osztenkurden <osztenkurden@gmail.com>",
+    "MrPatchman <root@timherbers.de>"
+  ],
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "dependencies": {
+    "bignumber": "latest",
+    "body-parser": "latest",
+    "express": "latest",
+    "fs": "latest",
+    "http": "latest",
+    "ip": "latest",
+    "json-bigint": "latest",
+    "line-reader": "latest",
+    "multer": "latest",
+    "nedb": "latest",
+    "node-fetch": "latest",
+    "osc": "latest",
+    "pug": "latest",
+    "request": "latest",
+    "save": "^2.4.0",
+    "socket.io": "latest",
+    "ts3-nodejs-library": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "latest"
+  }
+}
